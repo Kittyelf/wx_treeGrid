@@ -1,0 +1,14 @@
+<view class="tableContainer">
+  <view class="table">
+    <view class="tr th">
+      <view class="td">{{theadList[0]}}</view>
+      <view class="td">{{theadList[1]}}</view>
+      <view class="td">{{theadList[2]}}</view>
+      <view class="td">{{theadList[3]}}</view>
+      <view class="td">{{theadList[4]}}</view>
+    </view>
+    <view class="tbody">
+      <treeLine model="{{tbodyList}}"></treeLine>
+    </view>
+  </view>
+</view>

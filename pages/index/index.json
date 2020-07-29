@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "树形数据表格",
+  "usingComponents": {
+    "treeGrid": "/components/treeGrid/treeGrid"
+  }
+}

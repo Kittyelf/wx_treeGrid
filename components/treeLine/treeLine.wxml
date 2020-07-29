@@ -1,0 +1,19 @@
+<!--components/treeLine/treeLine.wxml-->
+<view class="container">
+  <view>
+    <view class="tr">
+      <view class="td col indent{{model.index}}">
+        <image wx:if="{{model.flag}}" src="{{open ? '/image/page_turning_right.png' : '/image/show_more.png'}}" bindtap="toggle"></image>
+        <image wx:else src="/image/page_turning_right.png"></image>
+        <text>{{model.deviceName}}</text>
+      </view>
+      <view class="td">{{model.deviceType}}</view>
+      <view class="td">{{model.deviceAddress}}</view>
+      <view class="td">{{model.deviceToken}}</view>
+      <view class="td">{{model.isOnline == 1 ? '在线' : '离线'}}</view>
+    </view>
+  </view>
+  <view hidden='{{ !open }}'>
+    <treeLine wx:for='{{ model.nodes }}' wx:key='deviceName' model='{{ item }}'></treeLine>
+  </view>
+</view>
